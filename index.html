@@ -1,172 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sagor Chandra Howlader | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Portfolio | Graduate</title>
+    
+    <!-- External Styles & Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <div class="container header-container">
-      <h1>Sagor Chandra Howlader</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Leadership & Experience</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section id="hero">
-    <div class="container">
-      <img
-        src="img1.jpg"
-        alt="Sagor Chandra Howlader"
-        class="profile-photo"
-      />
-      <h2>Hello, I'm <span>Sagor Chandra Howlader</span></h2>
-      <p>A Front-End Developer | Designer | Creator</p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate web developer with experience building responsive and modern websites. I
-        enjoy solving real-world problems through code and love working on tech-based projects
-        like robotics and web applications.
-      </p>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <p>
-        Currently studying <strong>7th semester</strong> in
-        <strong>Computer Science and Engineering</strong> at
-        <a href="https://ugv.edu.bd/" target="_blank" rel="noopener noreferrer">University of Global Village</a>.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Tailwind CSS</li>
-        <li>Git</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Leadership & Experience</h2>
-      <div class="experience-item">
-        <h3>UGV Programming Club</h3>
-        <p><strong>President</strong> — September 2024 to February 2025</p>
-        <img
-          src="img2.jpg"
-          alt="Sagor Chandra Howlader as President of UGV Programming Club"
-          class="experience-photo"
-        />
-        <p><strong>General Secretary</strong> — June 2023 to August 2024</p>
-        <p>
-          As a leader of the UGV Programming Club, I organized workshops, coding contests, and collaborative projects that helped students grow their programming skills and build a stronger tech community on campus.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="work" class="section">
-    <div class="container">
-      <h2>My Work</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Line Following Robot</h3>
-          <p>
-            A robot that follows a black line on a white surface using IR sensors and Arduino
-            programming. Designed for autonomous navigation.
-          </p>
+    <!-- Header -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Sagor</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                
+                <!-- NEW -->
+                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                
+                <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
         </div>
-        <div class="project-card">
-          <h3>Human Reaction Time</h3>
-          <img
-            src="https://media.licdn.com/dms/image/v2/D4D22AQHwUEPOcKg5yg/feedshare-shrink_800/feedshare-shrink_800/0/1733479305102?e=2147483647&v=beta&t=b-y5vTRnimitnxdYH-njOHLfJLQLJ5Kethxl_GAnJN4"
-            alt="Human Reaction Time Project"
-            class="project-image"
-          />
-          <p>
-            A web-based app to test and measure a person’s reaction time using JavaScript and DOM
-            manipulation.
-          </p>
+    </nav>
+</header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <!-- Left Sidebar Contact/Socials -->
+                    <div class="home__social">
+
+                        <!-- Email -->
+                        <a href="mailto:sagorchandrahowlader@gmail.com" class="home__social-icon">
+                            <i class="uil uil-envelope-alt"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/iamsagorhowlader/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/iamsagorhowlader/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/8801792861244" target="_blank" class="home__social-icon">
+                            <i class="uil uil-whatsapp"></i>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+
+                    </div>
+                    <!-- Hero Image (SVG Blob) -->
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.152407 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.152407 174.193 10.857 190.312 36.4879Z" fill="var(--first-color)"/>
+                                <!-- Replace with your own image -->
+                                <image
+                                    class="home__blob-img"
+                                    href="Profile.png"
+                                    x="0"
+                                    y="0"
+                                    width="100%"
+                                    height="100%"
+                                    preserveAspectRatio="xMidYMid slice"
+                                />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Sagor Chandra Howlader</h1>
+                        <h3 class="home__subtitle">Focusing on Systems & Hardware</h3>
+                        <p class="home__description">Specializing in system software, technical troubleshooting, and high-performance hardware specs.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+
+                    <!-- LEFT: IMAGE -->
+                    <div class="about__img">
+                        <img src="About.jpg" alt="Profile Photo">
+                    </div>
+
+                    <!-- RIGHT: TEXT -->
+                    <div class="about__data">
+                        <p class="about__description" style="text-align: justify;">
+                            Motivated and detail-oriented Computer Science graduate with a strong
+                            foundation in software development and algorithms, specializing in IT support and
+                            computer troubleshooting. Skilled in diagnosing and resolving hardware, software,
+                            and network issues, with experience in system maintenance and end-user
+                            support. Committed to delivering efficient solutions, ensuring system reliability,
+                            and providing excellent technical assistance in a growth-oriented organization.
+                        </p> <br><br>
+                        <div class="about__info">
+                        <div>
+                            <span class="about__info-title">Not Published Yet</span>
+                            <span class="about__info-name">CGPA</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">8+</span>
+                            <span class="about__info-name">Completed <br> Projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">UGV</span>
+                            <span class="about__info-name">University <br> Graduate</span>
+                        </div>
+                    </div>
+
+                        <div class="about__buttons">
+                            <a href="Sagor Resume CV.pdf" download class="button button--flex">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+<!-- Skills Section -->
+<section class="skills section" id="skills">
+    <h2 class="section__title">Skills</h2>
+    <span class="section__subtitle">My technical level</span>
+
+    <div class="skills__container container grid">
+
+        <!-- Frontend -->
+        <div class="skills__box">
+            <h3 class="skills__title">Frontend</h3>
+
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">HTML</div>
+                    <div class="skills__percent">90%</div>
+                </div>
+                <div class="skills__bar html"></div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">CSS</div>
+                    <div class="skills__percent">85%</div>
+                </div>
+                <div class="skills__bar css"></div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">JavaScript</div>
+                    <div class="skills__percent">70%</div>
+                </div>
+                <div class="skills__bar js"></div>
+            </div>
+
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>
-        <a href="mailto:sagorchandrahowlader@gmail.com" class="social-link">
-          <img
-            src="https://cdn-icons-png.freepik.com/256/5968/5968534.png?ga=GA1.1.1738444588.1725726687&semt=ais_hybrid"
-            alt="Gmail Icon"
-            class="social-icon"
-          />
-          sagorchandrahowlader@gmail.com
-        </a>
-      </p>
-      <p>
-        <a href="https://www.facebook.com/profile.php?id=100061062593979" target="_blank" class="social-link">
-          <img
-            src="https://cdn-icons-png.freepik.com/256/733/733547.png?ga=GA1.1.1738444588.1725726687&semt=ais_hybrid"
-            alt="Facebook Icon"
-            class="social-icon"
-          />
-          Facebook
-        </a>
-      </p>
-      <p>
-        <a href="https://www.instagram.com/iamsagorhowlader/" target="_blank" class="social-link">
-          <img
-            src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?ga=GA1.1.1738444588.1725726687&semt=ais_hybrid"
-            alt="Instagram Icon"
-            class="social-icon"
-          />
-          Instagram
-        </a>
-      </p>
-      <p>
-        <a href="https://x.com/home" target="_blank" class="social-link">
-          <img
-            src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.1738444588.1725726687&semt=ais_hybrid"
-            alt="X Icon"
-            class="social-icon"
-          />
-          X (Twitter)
-        </a>
-      </p>
-    </div>
-  </section>
+        <!-- IT Skills -->
+        <div class="skills__box">
+            <h3 class="skills__title">IT & Systems</h3>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Sagor Chandra Howlader. All rights reserved.</p>
-    </div>
-  </footer>
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">Networking</div>
+                    <div class="skills__percent">80%</div>
+                </div>
+                <div class="skills__bar network"></div>
+            </div>
 
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">Troubleshooting</div>
+                    <div class="skills__percent">88%</div>
+                </div>
+                <div class="skills__bar troubleshoot"></div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__header">
+                    <div class="skills__name">System Admin</div>
+                    <div class="skills__percent">75%</div>
+                </div>
+                <div class="skills__bar sys"></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience section" id="experience">
+    <h2 class="section__title">Experience</h2>
+    <span class="section__subtitle">My journey</span>
+
+    <div class="experience__container container">
+
+        <!-- Experience 1 -->
+        <div class="experience__content">
+            <div class="experience__data">
+                <h3 class="experience__title">President – UGV Programming Club</h3>
+                <span class="experience__company">University of Global Village</span>
+                <span class="experience__date">Winter 2024</span>
+
+                <ul class="experience__list">
+                    <li>Led the programming club and managed overall operations and planning.</li>
+                    <li>Organized programming contests, workshops, and technical events.</li>
+                    <li>Coordinated with faculty members and external speakers.</li>
+                    <li>Mentored junior members in coding and problem-solving.</li>
+                    <li>Increased student engagement through structured activities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="experience__content">
+            <div class="experience__data">
+                <h3 class="experience__title">General Secretary – UGV Programming Club</h3>
+                <span class="experience__company">University of Global Village</span>
+                <span class="experience__date">Summer 2024</span>
+
+                <ul class="experience__list">
+                    <li>Assisted in organizing coding competitions and seminars.</li>
+                    <li>Managed communication between members and executive committee.</li>
+                    <li>Maintained records, reports, and documentation.</li>
+                    <li>Handled event logistics and coordination.</li>
+                    <li>Helped onboard and guide new members.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="portfolio section" id="portfolio">
+    <h2 class="section__title">Projects</h2>
+    <span class="section__subtitle">My recent work</span>
+
+    <div class="portfolio__container container grid">
+
+        <!-- Project 1 -->
+        <div class="portfolio__card">
+            <img src="RFID.jpg" alt="Project 1">
+
+            <div class="portfolio__content">
+                <h3 class="portfolio__title">RFID Smart Attendence System</h3>
+                <p class="portfolio__description">
+                    An Arduino-based RFID attendance system is an automated solution designed to replace manual, paper-based tracking in schools and offices. By using Radio Frequency Identification (RFID) technology, users can simply scan a personal card to record their entry and exit times with high accuracy
+                </p>
+                <a href="RFID.jpg" class="button button--flex">View</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio__card">
+            <img src="HRT.jpg" alt="Project 2">
+
+            <div class="portfolio__content">
+                <h3 class="portfolio__title">Human Reaction Cheaker App</h3>
+                <p class="portfolio__description">
+                    A java based  App is a specialized tool designed to measure, track, and improve a person's cognitive speed and reflexes
+                </p>
+                <a href="HRT.jpg" class="button button--flex">View</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio__card">
+            <img src="LFC.jpg" alt="Project 3">
+
+            <div class="portfolio__content">
+                <h3 class="portfolio__title">Line Following Car</h3>
+                <p class="portfolio__description">
+                    A line-following car using Arduino is an autonomous robot that navigates a defined path, typically a black line on a white surface, using IR sensors for detection. It utilizes Arduino UNO to process sensor input and control motors via an L298N/L293D driver.
+                </p>
+                <a href="LFC.jpg" class="button button--flex">View</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Contact Section -->
+<footer class="footer" id="contact">
+    <div class="footer__container container grid">
+
+        <!-- Left: Info -->
+        <div class="footer__info">
+            <h2 class="footer__title">Sagor</h2>
+            <p class="footer__description">
+                Feel free to contact me for collaboration, projects, or IT support.
+            </p>
+
+            <div class="footer__contact">
+                <span>📧 sagorchandrahowlader@gmail.com</span>
+                <span>📱 +880 1792861244</span>
+                <span>📍 Gazipur, Dhaka, Bangladesh</span>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <form class="footer__form">
+            <input type="text" placeholder="Your Name" class="footer__input">
+            <input type="email" placeholder="Your Email" class="footer__input">
+            <textarea placeholder="Your Message" class="footer__input" rows="4"></textarea>
+
+            <button type="submit" class="button">
+                Send Message
+            </button>
+        </form>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer__bottom">
+        <span>© 2026 Sagor. All rights reserved.</span>
+    </div>
+</footer>
+    </main>
 </body>
 </html>
